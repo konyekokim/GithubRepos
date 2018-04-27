@@ -1,79 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="100dp"
-    android:padding="10dp"
-    android:layout_margin="5dp"
-    android:background="@drawable/item_background">
-
-    <ImageView
-        android:layout_width="80dp"
-        android:layout_height="80dp"
-        android:layout_centerVertical="true"
-        android:id="@+id/user_dp"
-        android:background="@color/backgroundColor"
-        android:layout_marginEnd="10dp" />
+    android:id="@+id/repo_card_view"
+    android:layout_height="wrap_content">
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_toEndOf="@+id/user_dp"
-        android:orientation="vertical"
-        android:layout_centerVertical="true">
+        android:layout_height="100dp"
+        android:padding="10dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/item_background">
 
-        <TextView
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/user_dp"
+            android:background="@color/backgroundColor"
+            android:layout_marginEnd="10dp" />
+
+        <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:singleLine="true"
-            android:maxLines="1"
-            android:textAppearance="?android:attr/textAppearanceMedium"
-            android:text="@string/repo_title_placeholder"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="5dp"
-            android:id="@+id/repo_title_textView"
-            android:textStyle="bold"
-            android:textColor="@android:color/black"
-            android:ellipsize="end"/>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceSmall"
-            android:layout_below="@+id/repo_title_textView"
-            android:text="@string/repo_description_placeholder"
-            android:textStyle="normal"
-            android:layout_marginEnd="20dp"
-            android:maxLines="2"
-            android:ellipsize="end"
-            android:id="@+id/repo_description_textView"/>
-        
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            android:id="@+id/repo_stats_layout"
-            android:orientation="horizontal"
-            android:layout_below="@+id/repo_description_textView">
+            android:layout_toEndOf="@+id/user_dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/repo_watchers_placeholder"
-                android:textSize="12sp"
-                android:id="@+id/repo_watchers_textView"
-                android:drawableStart="@drawable/ic_repo_fork"/>
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/repo_title_placeholder"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/repo_title_textView"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:ellipsize="end"/>
 
             <TextView
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/repo_language"
-                android:text="@string/repo_language_placeholder"
-                android:layout_marginStart="20dp"
-                android:textSize="12sp"
-                android:textColor="@color/languageTextColor"/>
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:layout_below="@+id/repo_title_textView"
+                android:text="@string/repo_description_placeholder"
+                android:textStyle="normal"
+                android:layout_marginEnd="20dp"
+                android:maxLines="2"
+                android:ellipsize="end"
+                android:id="@+id/repo_description_textView"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:id="@+id/repo_stats_layout"
+                android:orientation="horizontal"
+                android:layout_below="@+id/repo_description_textView">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/repo_watchers_placeholder"
+                    android:textSize="12sp"
+                    android:id="@+id/repo_watchers_textView"
+                    android:drawableStart="@drawable/ic_repo_fork"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/repo_language"
+                    android:text="@string/repo_language_placeholder"
+                    android:layout_marginStart="20dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/languageTextColor"/>
 
 
-        </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
 
     </RelativeLayout>
 
-</RelativeLayout>
+
+</android.support.v7.widget.CardView>
