@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">GithubRepos</string>
+    <string name="repo_title_placeholder">Title</string>
+    <string name="repo_description_placeholder">Description</string>
+    <string name="repo_watchers_placeholder">2049</string>
+    <string name="repo_language_placeholder">kotlin</string>
 </resources>
