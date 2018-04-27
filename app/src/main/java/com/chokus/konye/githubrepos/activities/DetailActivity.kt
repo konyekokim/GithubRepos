@@ -1,7 +1,8 @@
-package com.chokus.konye.githubrepos
+package com.chokus.konye.githubrepos.activities
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import com.chokus.konye.githubrepos.R
 
 class DetailActivity : AppCompatActivity() {
 
