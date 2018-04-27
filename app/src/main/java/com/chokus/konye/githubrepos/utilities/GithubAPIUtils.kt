@@ -1,6 +1,6 @@
 package com.chokus.konye.githubrepos.utilities
 
-object GithubApiUtils {
+object GithubAPIUtils {
 
     val BASE_URL = "https://api.github.com/"
 

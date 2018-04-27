@@ -47,7 +47,6 @@ class RepoRecyclerListAdapter(repos : MutableList<Item>) : RecyclerView.Adapter<
             Picasso.get().load(repo.owner?.avatarUrl)
                     .placeholder(R.color.backgroundColor)
                     .error(android.R.drawable.stat_notify_error)
-                    .centerInside()
                     .tag(itemView.context)
                     .into(view.user_dp)
             
