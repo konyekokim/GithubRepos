@@ -1,6 +1,7 @@
 package com.chokus.konye.githubrepos.adapter
 
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.graphics.Color
 import android.support.v7.widget.RecyclerView
@@ -56,7 +57,7 @@ class RepoRecyclerListAdapter(repos : MutableList<Item>) : RecyclerView.Adapter<
             
             view.repo_title_textView.text = repo.name
             view.repo_description_textView.text = repo.description
-            view.repo_watchers_textView.text = " " + String.format("%,d", repo?.forksCount)
+            view.repo_watchers_textView.text = repo.forksCount.toString()
             view.repo_language.text = repo.language
         }
     }
