@@ -1,9 +1,6 @@
 package com.chokus.konye.githubrepos.adapter
 
-
-import android.annotation.SuppressLint
 import android.content.Intent
-import android.graphics.Color
 import android.support.v7.widget.RecyclerView
 import android.view.LayoutInflater
 import android.view.View
@@ -13,7 +10,6 @@ import com.chokus.konye.githubrepos.activities.DetailActivity
 import com.chokus.konye.githubrepos.models.Item
 import com.chokus.konye.githubrepos.utilities.StoreItem
 import com.squareup.picasso.Picasso
-import com.squareup.picasso.PicassoProvider
 import kotlinx.android.synthetic.main.repos_list_item.view.*
 
 class RepoRecyclerListAdapter(repos : MutableList<Item>) : RecyclerView.Adapter<RepoRecyclerListAdapter.ViewHolder>(){
