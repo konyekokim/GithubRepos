@@ -1,7 +1,9 @@
 package com.chokus.konye.githubrepos.ui
 
+import android.content.Intent
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import com.chokus.konye.githubrepos.R
 import com.chokus.konye.githubrepos.models.Item
 import com.chokus.konye.githubrepos.util.StoreItem
@@ -33,5 +35,18 @@ class DetailActivity : AppCompatActivity() {
         repo_open_issues.text = repos?.openIssues.toString()
     }
 
+    override fun onBackPressed() {
+        super.onBackPressed()
+        val intent = Intent(this, ReposListActivity::class.java)
+        startActivity(intent)
+    }
 
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        if(keyCode == KeyEvent.KEYCODE_BACK){
+            finish()
+            val intent = Intent(this, ReposListActivity::class.java)
+            startActivity(intent)
+        }
+        return super.onKeyDown(keyCode, event)
+    }
 }
