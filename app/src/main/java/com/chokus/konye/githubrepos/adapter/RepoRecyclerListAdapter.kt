@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.chokus.konye.githubrepos.R
-import com.chokus.konye.githubrepos.activities.DetailActivity
+import com.chokus.konye.githubrepos.ui.DetailActivity
 import com.chokus.konye.githubrepos.models.Item
 import com.chokus.konye.githubrepos.utilities.StoreItem
 import com.squareup.picasso.Picasso
