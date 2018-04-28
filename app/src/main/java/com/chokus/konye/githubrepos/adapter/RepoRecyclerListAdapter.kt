@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import com.chokus.konye.githubrepos.R
 import com.chokus.konye.githubrepos.ui.DetailActivity
 import com.chokus.konye.githubrepos.models.Item
-import com.chokus.konye.githubrepos.utilities.StoreItem
+import com.chokus.konye.githubrepos.util.StoreItem
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.repos_list_item.view.*
 

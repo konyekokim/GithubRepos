@@ -9,8 +9,8 @@ import com.chokus.konye.githubrepos.R
 import com.chokus.konye.githubrepos.adapter.RepoRecyclerListAdapter
 import com.chokus.konye.githubrepos.models.Item
 import com.chokus.konye.githubrepos.models.RepoModel
-import com.chokus.konye.githubrepos.utilities.APIService
-import com.chokus.konye.githubrepos.utilities.GithubAPIUtils
+import com.chokus.konye.githubrepos.util.APIService
+import com.chokus.konye.githubrepos.util.GithubAPIUtils
 import kotlinx.android.synthetic.main.activity_repos_list.*
 import retrofit2.Call
 import retrofit2.Callback

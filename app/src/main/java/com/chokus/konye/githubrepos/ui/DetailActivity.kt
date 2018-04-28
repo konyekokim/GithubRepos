@@ -4,7 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import com.chokus.konye.githubrepos.R
 import com.chokus.konye.githubrepos.models.Item
-import com.chokus.konye.githubrepos.utilities.StoreItem
+import com.chokus.konye.githubrepos.util.StoreItem
 import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.activity_detail.*
 

@@ -1,4 +1,4 @@
-package com.chokus.konye.githubrepos.utilities
+package com.chokus.konye.githubrepos.util
 
 import com.chokus.konye.githubrepos.models.RepoModel
 import retrofit2.Call

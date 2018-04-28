@@ -1,4 +1,4 @@
-package com.chokus.konye.githubrepos.utilities
+package com.chokus.konye.githubrepos.util
 
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory

@@ -1,4 +1,4 @@
-package com.chokus.konye.githubrepos.utilities
+package com.chokus.konye.githubrepos.util
 
 object GithubAPIUtils {
 
