@@ -24,6 +24,7 @@ class DetailActivity : AppCompatActivity() {
     private fun viewActions(){
         Picasso.get().load(repos?.owner?.avatarUrl).into(user_display_imageView)
         repo_title.text = repos?.name
+        repo_fullName.text = repos?.fullName
         repo_full_description.text = repos?.description
         repo_stars.text = repos?.stargazersCount.toString()
         repo_watchers.text = repos?.watchers.toString()
