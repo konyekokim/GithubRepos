@@ -15,7 +15,8 @@
         fresco:actualImageScaleType="centerCrop"
         fresco:roundAsCircle="true"
         fresco:roundingBorderWidth="10dp"
-        android:layout_centerHorizontal="true"/>
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
 
     <TextView
         android:layout_width="wrap_content"

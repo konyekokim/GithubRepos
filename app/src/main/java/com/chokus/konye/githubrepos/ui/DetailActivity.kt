@@ -37,15 +37,12 @@ class DetailActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        val intent = Intent(this, ReposListActivity::class.java)
-        startActivity(intent)
+        finish()
     }
 
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         if(keyCode == KeyEvent.KEYCODE_BACK){
             finish()
-            val intent = Intent(this, ReposListActivity::class.java)
-            startActivity(intent)
         }
         return super.onKeyDown(keyCode, event)
     }
