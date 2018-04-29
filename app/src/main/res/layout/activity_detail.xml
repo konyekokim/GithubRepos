@@ -151,6 +151,6 @@
         android:textColor="@android:color/white"
         android:background="@drawable/button_drawable"
         android:textStyle="bold"
-        android:stateListAnimator="null"/>
+        style="?android:attr/borderlessButtonStyle"/>
 
 </RelativeLayout>
