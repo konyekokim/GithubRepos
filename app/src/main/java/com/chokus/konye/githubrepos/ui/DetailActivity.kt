@@ -1,6 +1,7 @@
 package com.chokus.konye.githubrepos.ui
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.KeyEvent
@@ -21,6 +22,7 @@ class DetailActivity : AppCompatActivity() {
             title = repos?.name
             viewActions()
         }
+        viewOnGithub()
     }
 
     private fun viewActions(){
@@ -33,6 +35,13 @@ class DetailActivity : AppCompatActivity() {
         repo_forks.text = repos?.forksCount.toString()
         repo_language.text = repos?.language
         repo_open_issues.text = repos?.openIssues.toString()
+    }
+
+    private fun viewOnGithub(){
+        go_to_github.setOnClickListener {
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse(repos?.htmlUrl))
+            startActivity(intent)
+        }
     }
 
     override fun onBackPressed() {
