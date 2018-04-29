@@ -72,10 +72,8 @@ class ReposListActivity : AppCompatActivity() {
         val backgroundLayout = findViewById(R.id.repos_layout) as LinearLayout
         Snackbar.make(backgroundLayout, "Failed to get trending repos", Snackbar.LENGTH_INDEFINITE)
                 .setAction("RETRY") {
-                    val intent = intent
-                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
-                    startActivity(intent)
-                    finish()
+                    getRepos()
+                    toastMethod("Fetching Trending Repos")
                 }.setActionTextColor(resources.getColor(R.color.backgroundColor)).show()
     }
 
@@ -114,5 +112,9 @@ class ReposListActivity : AppCompatActivity() {
                         finish()
                     }.setActionTextColor(resources.getColor(R.color.backgroundColor)).show()
         }
+    }
+
+    private fun toastMethod(message : String?){
+        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 }
