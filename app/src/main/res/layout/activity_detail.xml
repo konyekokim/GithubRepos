@@ -150,6 +150,7 @@
         android:layout_marginBottom="20dp"
         android:textColor="@android:color/white"
         android:background="@drawable/button_drawable"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:stateListAnimator="null"/>
 
 </RelativeLayout>
