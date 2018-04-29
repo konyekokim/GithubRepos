@@ -53,7 +53,7 @@ class ReposListActivity : AppCompatActivity() {
         apiService?.getRepositories(page)?.enqueue(object : Callback<RepoModel>{
             override fun onFailure(call: Call<RepoModel>?, t: Throwable?) {
                 // take action to show that repositories were not gotten
-                toastMethod("Failed to get trending repos")
+                onFailToGetRepos()
             }
             override fun onResponse(call: Call<RepoModel>?, response: Response<RepoModel>?) {
                 if(response != null){
@@ -66,6 +66,17 @@ class ReposListActivity : AppCompatActivity() {
                 }
             }
         })
+    }
+
+    private fun onFailToGetRepos(){
+        val backgroundLayout = findViewById(R.id.repos_layout) as LinearLayout
+        Snackbar.make(backgroundLayout, "Failed to get trending repos", Snackbar.LENGTH_INDEFINITE)
+                .setAction("RETRY") {
+                    val intent = intent
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NO_ANIMATION)
+                    startActivity(intent)
+                    finish()
+                }.setActionTextColor(resources.getColor(R.color.backgroundColor)).show()
     }
 
     private val lastItemShowingPosition : Int
@@ -103,9 +114,5 @@ class ReposListActivity : AppCompatActivity() {
                         finish()
                     }.setActionTextColor(resources.getColor(R.color.backgroundColor)).show()
         }
-    }
-
-    private fun toastMethod(message : String?){
-        Toast.makeText(applicationContext, message, Toast.LENGTH_SHORT).show()
     }
 }
